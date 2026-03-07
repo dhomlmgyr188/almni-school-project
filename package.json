@@ -1,0 +1,39 @@
+{
+  "name": "almni-school",
+  "version": "1.0.0",
+  "description": "almni-school-project to display informations about our scool.",
+  "keywords": [
+    "html",
+    "css",
+    "bootstrap",
+    "javascript",
+    "jquery",
+    "sass",
+    "webpack",
+    "git",
+    "github."
+  ],
+  "homepage": "https://github.com/dhomlmgyr188/almni-school-project#readme",
+  "bugs": {
+    "url": "https://github.com/dhomlmgyr188/almni-school-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhomlmgyr188/almni-school-project.git"
+  },
+  "license": "ISC",
+  "author": "Abdulrahman Nasser Almughyir",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.4",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.6",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^6.0.1"
+  }
+}
