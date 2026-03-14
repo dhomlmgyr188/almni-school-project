@@ -29,7 +29,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "dev": "webpack --mode development",
-    "serve": "webpack serve --mode development"
+    "serve": "webpack serve --mode production"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.27",
@@ -39,16 +39,17 @@
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.6",
     "mini-css-extract-plugin": "^2.10.0",
+    "postcss": "^8.5.8",
     "postcss-loader": "^8.2.1",
     "rtlcss": "^4.3.0",
     "sass": "^1.97.3",
     "sass-loader": "^16.0.7",
-    "sass-migrator": "^2.5.7",
     "webpack": "^5.105.4",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.3"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.2.0",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.8"
   }

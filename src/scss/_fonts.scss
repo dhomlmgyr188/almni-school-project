@@ -1,0 +1,43 @@
+@use "colors.scss" as colors;
+@use "sass:color";
+
+@font-face {
+    font-family: "Droid Arabic Kufi";
+    src: url(../fonts/Droid-Arabic-Kufi.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Droid Arabic Kufi";
+    src: url("../fonts/Droid Arabic Kufi Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+$font-droid: 'Droid Arabic Kufi', 'Helvetica Neue', 'Segoe UI', sans-serif;
+$fonts-regular: 400;
+$fonts-bold: 700;
+
+.heading{
+    font-weight: $fonts-bold;
+    font-size: 28px;
+    color: colors.$color-heading;
+}
+
+.sub-heading{
+    font-weight: $fonts-bold;
+    font-size: 18px;
+    color: color.adjust(colors.$color-heading, $lightness: -20%)
+}
+.paragraph{
+    font-weight: $fonts-regular;
+    font-size: 14px;
+    color: colors.$color-content;
+}
+.sub-dudded{
+    color: colors.$color-title-subdued;
+}

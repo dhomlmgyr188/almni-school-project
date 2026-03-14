@@ -1,0 +1,8 @@
+@use "colors.scss" as colors;
+@use "fonts.scss" as fonts;
+@use "sass:color";
+
+.custom-navbar{
+    background-color: colors.$color-navbar;
+}
+

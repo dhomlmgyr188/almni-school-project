@@ -1,0 +1,21 @@
+@use 'colors.scss' as colors;
+@use 'fonts.scss' as fonts;
+@use 'variables.scss' as variables;
+
+html{
+    box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: variables.$font-base;
+    line-height: variables.$line-height;
+    color: colors.$color-content;
+    background-color: colors.$color-background;
+    font-family: fonts.$font-droid;
+}
