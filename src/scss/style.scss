@@ -182,6 +182,10 @@ $icon-size: 46px;
 }
 
 @media (max-width: 800px) {
+  .border-right{
+    border: none;
+  }
+  
   #our-activities{
     h5{
       font-size: 21px;
