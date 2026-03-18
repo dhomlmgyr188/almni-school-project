@@ -9,7 +9,15 @@
 
 <body>
     <main class="container-fluid">
-
+<div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasLabel">أهلًا بك في عالم التعلم الممتع!</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+   أهلًا بك في مدرسة علمني، أفضل مدرسة على مستوى القطر متخصصة في تعليم وتأهيل الطلاب بأفضل الطرق والنشاطات، إن كنت تبحث عن مدرسة مميزة لابنك لا تتردد بالتواصل معنا.
+  </div>
+</div>
         <header class="row">
             <nav class="navbar navbar-expand-lg custom-navbar">
                 <div class="container">
@@ -18,7 +26,7 @@
                             class="d-inline-block align-text-center custom-navbar-img">
                         <span class="custom-navbar-text"> مدرسة علمني الإبتدائية </span>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler custom-form-control" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -36,7 +44,7 @@
                                     aria-expanded="false">
                                     تعرف على طلابنا
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu custom-form-control">
                                     <li><a class="dropdown-item" href="#students">طلاب المدرسة</a></li>
                                     <li><a class="dropdown-item" href="#stars-school">نجوم المدرسة</a></li>
                                 </ul>
@@ -47,7 +55,7 @@
                         </ul>
                         <div class="d-grid gap-3 d-md-block">
                             <a class="btn btn-primary" href="./login.html">تسجيل دخول</a>
-                            <a class="btn btn-primary" href="./register.html">سجل الأن</a>
+                            <a class="btn btn-outline-primary" href="./register.html">سجل الأن</a>
                         </div>
                     </div>
 
@@ -96,7 +104,7 @@
 
             <div class="row ">
                 <section id="our-activities" class="container pb-5 text-center">
-                    <h3 class="heading mt-5 mb-4"> نشاطاتنا</h3>
+                    <h3 class="heading mt-5"> نشاطاتنا</h3>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-6 col-lg-5">
@@ -147,7 +155,7 @@
             <div class="container">
                 <section id="students" class="pb-5">
                     <div class="container text-center">
-                        <h3 class="heading mt-5 mb-4"> طلاب المدرسة</h3>
+                        <h3 class="heading mt-5"> طلاب المدرسة</h3>
                         <div id="studentsCarousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -233,7 +241,7 @@
             <div class="row ">
                 <section id="stars-school" class="pb-5">
                     <div class="container text-center">
-                        <h3 class="heading mt-5 mb-4"> نجوم مدرستنا</h3>
+                        <h3 class="heading mt-5"> نجوم المدرسة</h3>
                         <div class="row justify-content-center">
 
                             <div class="col-md-4 border-right">
@@ -241,7 +249,7 @@
                                     <img src="../src/images/kidds-school-1.jpg" class="border-img">
                                     <h4 class="sub-heading">عبدالرحمن ناصر المغير </h4>
                                     <p class="paragraph rank">المرتبة الأولى</p>
-                                    <a href="./student_first.html" target="_blank" class="btn btn-primary">
+                                    <a href="./student_first.html" class="btn btn-primary">
                                         عرض الملف
                                     </a>
                                 </div>
@@ -249,7 +257,7 @@
                             <div class="col-md-4">
                                 <div class="top-student-card">
                                     <img src="../src/images/kidds-school-2.jpg" class="border-img">
-                                    <h6 class="sub-heading">محمد علي الأمين</h6>
+                                    <h4 class="sub-heading">محمد علي الأمين</h4>
                                     <p class="paragraph rank">المرتبة الثانية</p>
                                     <a href="./student_second.html" class="btn btn-primary">
                                         عرض الملف
@@ -264,22 +272,22 @@
             <div class="container">
                 <section id="contact" class="pb-5">
                     <div class="container text-center">
-                        <h3 class="heading mt-5 mb-4"> تواصل معنا </h3>
+                        <h3 class="heading mt-5"> تواصل معنا </h3>
                         <div class="row align-items-center justify-content-center">
-                            <div class="col-md-6 col-12">
+                            <div class="col-md-6 col-12 mt-3 mb-5">
                                 <div>
-                                    <h6 class="sub-heading">رقم الهاتف:</h6>
+                                    <h4 class="sub-heading">رقم الهاتف:</h4>
                                     <p class="paragraph">
                                         541590819
                                         <span class="country">+966</span>
                                     </p>
                                 </div>
                                 <div>
-                                    <h6 class="sub-heading">البريد الإلكتروني:</h6>
+                                    <h4 class="sub-heading">البريد الإلكتروني:</h4>
                                     <p class="paragraph">dhomlmgyr@gmail.com</p>
                                 </div>
                                 <div>
-                                    <h6 class="sub-heading">العنوان:</h6>
+                                    <h4 class="sub-heading">العنوان:</h4>
                                     <p class="paragraph">السعودية, الرياض , حي الأزهري,45233</p>
                                 </div>
                             </div>
@@ -301,14 +309,15 @@
             <div class="footer-top pt-5">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <h5 class="sub-heading"> مدرسة علمني الإبتدائية</h5>
+                        <div class="col-lg-4 col-md-6 mb-3">
+                            <h4 class="sub-heading"> مدرسة علمني الإبتدائية</h4>
                             <p class="paragraph">
-مرحبًا بكم في مدرسة علّمني، حيث نُحوّل التعلم إلى تجربة ممتعة ومبدعة لكل طالب. انضموا إلينا لتحقيق التميز والنجاح!
+                                مرحبًا بكم في مدرسة علّمني، حيث نُحوّل التعلم إلى تجربة ممتعة ومبدعة لكل طالب. انضموا
+                                إلينا لتحقيق التميز والنجاح!
                             </p>
                         </div>
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <h6 class="sub-heading">روابط سريعة</h6>
+                        <div class="col-lg-4 col-md-6 mb-3">
+                            <h4 class="sub-heading">روابط سريعة</h4>
                             <ul class="footer-links">
                                 <li>
                                     <a href="./index.html">الرئيسية</a>
@@ -324,8 +333,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-4 col-md-12">
-                            <h6 class="sub-heading">منصات التواصل الاجتماعي</h6>
+                        <div class="col-lg-4 col-md-12 mb-3">
+                            <h4 class="sub-heading">منصات التواصل الاجتماعي</h4>
                             <ul class="social-media d-flex gap-3">
                                 <li>
                                     <a href="https://facebook.com">

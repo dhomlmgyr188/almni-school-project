@@ -1,13 +1,17 @@
+@use "student-theme.scss" as student-theme;
 @use "colors.scss" as colors;
 @use "global.scss" as global;
 @use "links.scss" as links;
 @use "fonts.scss" as fonts;
 @use "variables.scss" as variables;
 @use "navbar.scss" as navbar;
+@use "typography.scss" as typography;
 @use "sass:color";
 
 $icon-size: 46px;
-
+#register {
+  background-color: red;
+}
 .carousel .custom-carousel-item {
   height: 500px;
   img {
@@ -15,6 +19,78 @@ $icon-size: 46px;
     height: 100%;
     object-fit: cover;
   }
+}
+.title-subdued {
+  color: colors.$color-title-subdued;
+  font-weight: fonts.$fonts-regular;
+  font-size: 14px;
+}
+.border-bottom-up {
+  border-bottom: 1px dashed colors.$color-title-subdued;
+  border-top: 1px dashed colors.$color-title-subdued;
+}
+.custom-form-control {
+  border: 2px solid colors.$color-title-subdued;
+  &:valid{
+    border: 2px solid colors.$color-pink-dark;
+  }
+  &:focus {
+    box-shadow: none;
+    border: 2px solid colors.$color-blue;
+  }
+}
+.login-img {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  box-shadow: 1px 1px 5px 1px colors.$color-title-subdued;
+  &:hover {
+    box-shadow: 1px 1px 5px 1px colors.$color-blue;
+    transform: translateY(-5px);
+  }
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.bg1 {
+  z-index: 1;
+  opacity: 1;
+}
+
+.bg2 {
+  z-index: 2;
+  opacity: 0;
+}
+
+#bgCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: colors.$color-white;
 }
 .custm-card {
   display: flex;
@@ -34,7 +110,7 @@ $icon-size: 46px;
 #our-activities {
   background-color: colors.$color-white;
   .custm-card {
-    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.80);
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.8);
     background-color: colors.$color-background;
     height: 200px;
   }
@@ -47,7 +123,7 @@ $icon-size: 46px;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    box-shadow:none;
+    box-shadow: none;
 
     img {
       padding-bottom: 5px;
@@ -71,7 +147,12 @@ $icon-size: 46px;
   color: colors.$color-blue;
   transition: 0.2s ease;
 }
-
+#login {
+  background-color: colors.$color-background;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #stars-school {
   background-color: colors.$color-white;
 
@@ -103,70 +184,70 @@ $icon-size: 46px;
   }
 }
 
-.country{
-  color: colors.$color-green-dark;
-  padding: 3px 5px;
-  border-radius: 10px;
-  background-color: colors.$color-white;
-} 
-.location{
+.country {
+  color: colors.$color-blue-dark;
+}
+.location {
   width: 100%;
   height: 350px;
-  iframe{
+  iframe {
     width: 100%;
     height: 100%;
     box-shadow: 0 0px 2px rgb(0, 0, 0, 0.5);
   }
 }
-.copy-right{
+.copy-right {
   background-color: colors.$color-white;
 }
-.footer-nav{
+.footer-nav {
   background-color: colors.$color-white;
 }
-.border-right{
+.border-right {
   border-right: 1px solid colors.$color-title-subdued;
 }
 
-#footer{
+#footer {
   background: colors.$color-white;
 
-  .footer-links{
+  .footer-links {
     list-style: none;
     padding: 0;
 
-    li{
+    li {
       margin-bottom: 8px;
 
-      a{
+      a {
         text-decoration: none;
         color: colors.$color-gray;
-        transition: .3s;
+        transition: 0.3s;
 
-        &:hover{
-          color: colors.$color-blue-dark;
+        &:hover {
+          color: colors.$color-dark;
           padding-right: 5px;
         }
       }
     }
   }
 
-  .social-media{
+  .social-media {
     list-style: none;
     padding: 0;
 
-    a{
+    a {
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: .3s;
+      color: colors.$color-gray;
+      transition: 0.3s;
+      font-size: $icon-size;
 
-      &:hover{
+      &:hover {
+        color: colors.$color-dark;
         transform: translateY(-3px);
       }
     }
   }
-  .copy-right{
+  .copy-right {
     display: flex;
     text-align: center;
     align-items: center;
@@ -175,34 +256,54 @@ $icon-size: 46px;
     color: colors.$color-dark;
     font-weight: fonts.$fonts-bold;
     font-size: variables.$font-base;
-    p{
+    p {
       margin: 0;
     }
   }
 }
 
-@media (max-width: 800px) {
-  .border-right{
+.custom-breadcrumb {
+  a {
+    color: colors.$color-dark;
+    font-weight: fonts.$fonts-bold;
+  }
+}
+
+@media (max-width: 1200px) {
+  .title-subdued {
+    font-size: 12px;
+  }
+}
+@media (max-width: 997) {
+  .title-subdued {
+    font-size: 10px;
+  }
+}
+@media (max-width: 776px) {
+  .border-right {
     border: none;
   }
-  
-  #our-activities{
-    h5{
+
+  #our-activities {
+    h5 {
       font-size: 21px;
     }
-    p{
+    p {
       font-size: 13px;
     }
   }
 }
 
 @media (max-width: 550px) {
-  #our-activities{
-    h5{
+  #our-activities {
+    h5 {
       font-size: 18px;
     }
-    p{
+    p {
       font-size: 12px;
     }
+  }
+    .title-subdued {
+    font-size: 9px;
   }
 }

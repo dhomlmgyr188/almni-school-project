@@ -1,0 +1,130 @@
+@use "colors.scss" as colors;
+@use "variables.scss" as variables;
+@use "fonts.scss" as fonts;
+
+@mixin student-theme(
+  $clr-primary,
+  $clr-secondary,
+  $bg-primary,
+  $bg-secondary,
+  $bg-third,
+  $border-color,
+  $shadow-color
+) {
+  h3 {
+    color: $clr-secondary;
+  }
+  #about-student {
+    background-color: $bg-primary;
+
+    .about-student-row {
+      padding: 15px 0;
+      border-top: 1px solid $border-color;
+      border-bottom: 1px solid $border-color;
+
+      .custom-col {
+        &:last-child {
+          border-right: none;
+        }
+        border-right: 1px solid $border-color;
+        padding: 8px;
+        color: $bg-secondary;
+        background-color: $clr-secondary;
+        box-shadow:
+          0px 0px 5px $shadow-color,
+          inset 0px 0px -2px $shadow-color;
+      }
+    }
+  }
+
+  #degress {
+    background-color: $bg-secondary;
+
+    .degress-table {
+      width: 100%;
+      border-collapse: collapse;
+
+      th,
+      td {
+        border: 1px solid $border-color;
+        padding: 10px;
+        text-align: center;
+      }
+
+      th {
+        color: $bg-secondary;
+        background-color: $clr-secondary;
+      }
+    }
+  }
+
+  #advices {
+    background-color: $bg-primary;
+    width: 100%;
+    padding: 0;
+
+    img {
+      max-height: 300px;
+      max-width: 400px;
+      width: 100%;
+      object-fit: cover;
+      object-position: bottom;
+      border-radius: 20px;
+      box-shadow: 1px 2px 9px $shadow-color;
+      transition: 0.3s;
+
+      &:hover {
+        transform: translateY(-6px);
+      }
+    }
+
+    ol {
+      margin-left: 30px;
+
+      li {
+        padding: 5px;
+        color: $shadow-color;
+        font-size: variables.$font-base;
+        font-weight: fonts.$fonts-bold;
+      }
+    }
+  }
+}
+
+.student-first {
+  @include student-theme(
+    //clr primary
+    colors.$color-green,
+    // clr-secondar
+    colors.$color-green-dark,
+    // bg-primary
+    colors.$color-background,
+    // bg-second
+    colors.$color-white,
+    // bg-third
+    colors.$color-green-light,
+    // border-color
+    colors.$color-title-subdued,
+    // shadow-color
+    colors.$color-dark
+  );
+}
+
+.student-second {
+  @include student-theme(
+    //clr primary
+    colors.$color-pink,
+    // clr-secondar
+    colors.$color-pink-dark,
+    // bg-primary
+    colors.$color-background,
+    // bg-second
+    colors.$color-white,
+    // bg-third
+    colors.$color-pink-light,
+    // border-color
+    colors.$color-title-subdued,
+    // shadow-color
+    colors.$color-dark
+  );
+}
