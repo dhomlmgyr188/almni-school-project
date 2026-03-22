@@ -11,7 +11,7 @@
   $border-color,
   $shadow-color
 ) {
-  h3 {
+  .huding {
     color: $clr-secondary;
   }
   #about-student {
@@ -22,8 +22,12 @@
       border-top: 1px solid $border-color;
       border-bottom: 1px solid $border-color;
 
+      p{
+        margin-bottom: 0;
+      }
+
       .custom-col {
-        &:last-child {
+        &:last-child {  
           border-right: none;
         }
         border-right: 1px solid $border-color;
@@ -62,6 +66,9 @@
     background-color: $bg-primary;
     width: 100%;
     padding: 0;
+    .custom-card{
+      min-height: 150px;
+    }
 
     img {
       max-height: 300px;
@@ -98,7 +105,7 @@
     // clr-secondar
     colors.$color-green-dark,
     // bg-primary
-    colors.$color-background,
+    colors.$color-background-primary,
     // bg-second
     colors.$color-white,
     // bg-third
@@ -117,7 +124,7 @@
     // clr-secondar
     colors.$color-pink-dark,
     // bg-primary
-    colors.$color-background,
+    colors.$color-background-primary,
     // bg-second
     colors.$color-white,
     // bg-third

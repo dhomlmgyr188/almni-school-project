@@ -8,13 +8,14 @@
 </head>
 
 <body>
-    <main class="container-fluid">
 
-        <header class="row">
-            <nav class="navbar navbar-expand-lg custom-navbar">
+    <main class="container-fluid px-0">
+
+        <header id="header">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand custom-navbar-text-img" href="./index.html">
-                        <img src="../src/images/noun-school-3652203.svg" alt="Logo" width="35" height="35"
+                    <a class="navbar-brand custom-navbar-text-img" href="index.html">
+                        <img src="/src/images/noun-school-3652203.svg" alt="Logo" width="35" height="35"
                             class="d-inline-block align-text-center custom-navbar-img">
                         <span class="custom-navbar-text"> مدرسة علمني الإبتدائية </span>
                     </a>
@@ -26,10 +27,10 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">الرئيسية</a>
+                                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./index.html#our-activities">نشاطاتنا</a>
+                                <a class="nav-link" href="index.html#our-activities">نشاطاتنا</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -37,32 +38,24 @@
                                     تعرف على طلابنا
                                 </a>
                                 <ul class="dropdown-menu custom-form-control">
-                                    <li><a class="dropdown-item" href="./index.html#students">طلاب المدرسة</a></li>
-                                    <li><a class="dropdown-item" href="./index.html#stars-school">نجوم المدرسة</a></li>
+                                    <li><a class="dropdown-item" href="index.html#students">طلاب المدرسة</a></li>
+                                    <li><a class="dropdown-item" href="index.html#stars-school">نجوم المدرسة</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./index.html#contact">تواصل معنا</a>
+                                <a class="nav-link" href="index.html#contact">تواصل معنا</a>
                             </li>
                         </ul>
-                        <span class="navbar-text d-none d-lg-block">
-                            سجل دخولك واستمر في طريق النجاح
-                        </span>
-                        <div class="d-grid gap-3 d-none">
-                            <a class="btn btn-primary" href="./login.html">تسجيل دخول</a>
-                            <a class="btn btn-outline-primary" href="./register.html">سجل الأن</a>
-                        </div>
                     </div>
-
                 </div>
             </nav>
         </header>
 
         <section id="login">
             <div class="container py-4">
-                <div class="row py-4">
-                    <div class="col-12 col-md-6">
-                        <h3 class="heading"> تسجيل الدخول </h3>
+                <h3 class="heading"> تسجيل الدخول </h3>
+                <div class="row py-4 align-items-center">
+                    <div class="col-lg-6">
                         <form id="loginForm" class="custom-form">
                             <div class="mb-3">
                                 <label for="email" class="form-label">البريد الإلكتروني :</label>
@@ -78,84 +71,75 @@
                                     class="form-control custom-form-control" required minlength="8">
                             </div>
                             <button type="submit" class="btn btn-primary w-100 mb-3">تسجيل الدخول</button>
-                            <div>
-                                <p class="paragraph">
-                                    ليس لديك حساب على مدرسة علمني؟
-                                    <a href="./register.html"><b>سجل الأن</b></a>
-                                </p>
-                            </div>
+                            <p>
+                                ليس لديك حساب على مدرسة علمني؟
+                                <a href="register.html">
+                                    <b>سجل الأن</b>
+                                </a>
+                            </p>
                         </form>
-                    </div>
-                    <div class="col-12 col-md-6 d-none d-md-block">
-                        <div class="login-img">
-                            <div class="bg bg1"></div>
-                            <div class="bg bg2"></div>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer id="footer" class="row">
-            <div class="footer-top pt-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 mb-3">
-                            <div>
-                                <h4 class="sub-heading"> مدرسة علمني الإبتدائية</h4>
-                                <p class="paragraph">
-                                    مرحبًا بكم في مدرسة علّمني، حيث نُحوّل التعلم إلى تجربة ممتعة ومبدعة لكل طالب.
-                                    انضموا
-                                    إلينا لتحقيق التميز والنجاح!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mb-3">
-                            <h4 class="sub-heading">روابط سريعة</h4>
-                            <ul class="footer-links">
-                                <li>
-                                    <a href="./index.html">الرئيسية</a>
-                                </li>
-                                <li>
-                                    <a href="./index.html#our-activities">نشاطاتنا</a>
-                                </li>
-                                <li>
-                                    <a href="./index.html#students">طلاب المدرسة</a>
-                                </li>
-                                <li>
-                                    <a href="./index.html#contact">تواصل معنا</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-12 mb-3">
-                            <h4 class="sub-heading">منصات التواصل الاجتماعي</h4>
-                            <ul class="social-media d-flex gap-3">
-                                <li>
-                                    <a href="https://facebook.com">
-                                        <i class="fa-brands fa-facebook custom-icon"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://instagram.com">
-                                        <i class="fa-brands fa-instagram custom-icon"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://snapchat.com">
-                                        <i class="fa-brands fa-snapchat custom-icon"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+        <footer id="footer">
+            <div class="container">
+                <div class="row py-3 g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="sub-heading"> مدرسة علمني الإبتدائية</h4>
+                        <p>
+                            مرحبًا بكم في مدرسة علّمني، حيث نُحوّل التعلم إلى تجربة ممتعة ومبدعة لكل طالب.
+                            انضموا
+                            إلينا لتحقيق التميز والنجاح!
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="sub-heading">روابط سريعة</h4>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="index.html">الرئيسية</a>
+                            </li>
+                            <li>
+                                <a href="index.html#our-activities">نشاطاتنا</a>
+                            </li>
+                            <li>
+                                <a href="index.html#students">طلاب المدرسة</a>
+                            </li>
+                            <li>
+                                <a href="index.html#contact">تواصل معنا</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <h4 class="sub-heading">منصات التواصل الاجتماعي</h4>
+                        <ul class="social-media d-flex">
+                            <li>
+                                <a href="https://facebook.com">
+                                    <i class="fa-brands fa-facebook custom-icon"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com">
+                                    <i class="fa-brands fa-instagram custom-icon"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://snapchat.com">
+                                    <i class="fa-brands fa-snapchat custom-icon"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="copy-right text-center p-3">
-                <p class="paragraph" id="year"></p>
+            <div id="copy-right" class="text-center p-3">
+                <p id="year"></p>
             </div>
         </footer>
 
     </main>
+
 </body>
 
 </html>

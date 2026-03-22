@@ -7,32 +7,26 @@ import img3 from "../src/images/login-img-3.jpg";
 // Font Awesome
 import "@fortawesome/fontawesome-free/js/all.min.js";
 
-// تفعيل التولتيب
-document
-  .querySelectorAll('[data-bs-toggle="tooltip"]')
-  .forEach((item) => new bootstrap.Tooltip(item));
+document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((item) => new bootstrap.Tooltip(item));
 
-// تحديث السنة في الفوتر
 const yearEl = document.getElementById("year");
 if (yearEl) {
   yearEl.textContent =
-    "جميع الحقوق محفوظة لمدرسة علمني الإبتدائية سنة " +
+    "جميع الحقوق محفوظة لمدرسة علمني " +
     new Date().getFullYear();
 }
 
-// مصفوفة الصور
 const images = [img1, img2, img3];
 
 document.addEventListener("DOMContentLoaded", () => {
   const bg1 = document.querySelector(".bg1");
   const bg2 = document.querySelector(".bg2");
 
-  if (!bg1 || !bg2) return; // حماية إذا لم توجد العناصر
+  if (!bg1 || !bg2) return; 
 
   let current = 0;
   let showingFirst = true;
 
-  // أول صورة
   bg1.style.backgroundImage = `url(${images[current]})`;
 
   setInterval(() => {
@@ -51,3 +45,4 @@ document.addEventListener("DOMContentLoaded", () => {
     showingFirst = !showingFirst;
   }, 3000);
 });
+

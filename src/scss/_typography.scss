@@ -5,17 +5,15 @@
 $font-bigg: 24px;
 $font-medium: 18px;
 $font-small: 14px;
-$padding-bottom: 12px;
 
 p{
-    margin-bottom: 0;
+    font-weight: fonts.$fonts-regular;
 }
 
 .heading{
     font-weight: fonts.$fonts-bold;
     font-size: $font-bigg;
     color: colors.$color-heading;
-    padding-bottom: $padding-bottom;
 }
 
 .sub-heading{
@@ -23,11 +21,7 @@ p{
     font-size: $font-medium;
     color: color.adjust(colors.$color-heading, $lightness: -20%);
 }
-.paragraph{
-    font-weight: fonts.$fonts-regular;
-    font-size: $font-small;
-    color: colors.$color-content;   
-}
+
 .sub-dudded{
-    color: colors.$color-title-subdued;
+    color: colors.$color-gray;
 }

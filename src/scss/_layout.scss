@@ -1,0 +1,48 @@
+$portrait-phones-sm: 576px;
+$landscape-phones-md: 768px;
+$tablets-lg: 992px;
+$desktops-xl: 1200px;
+$large-desktops-xxl: 1400px;
+
+@media (max-width: $large-desktops-xxl) {
+}
+
+@media (max-width: $desktops-xl) {
+  .title-subdued {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: $tablets-lg) {
+  .title-subdued {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: $landscape-phones-md) {
+  #our-activities {
+    h5 {
+      font-size: 21px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  .border-right {
+    border: none !important;
+  }
+}
+
+@media (max-width: $portrait-phones-sm) {
+  #our-activities {
+    h5 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .title-subdued {
+    font-size: 9px;
+  }
+}
